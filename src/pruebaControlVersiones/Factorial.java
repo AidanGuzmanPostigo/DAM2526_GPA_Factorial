@@ -10,7 +10,7 @@ public class Factorial {
             System.out.println("Has introducido el número: " + num);
         }
         sc.close();
-        System.out.println("RESULTADO - El factorial del número " + num + " es " + factorialBucle(num));
+        System.out.println("RESULTADO - El factorial del número " + num + " es " + factorialRec(num));
 	}
 	private static long factorialRec(int n) {
 	    if (n == 0 || n == 1) {
