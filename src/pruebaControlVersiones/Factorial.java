@@ -29,4 +29,15 @@ public class Factorial {
 	    } while (!valido);
 		return num;
 	}
+	private static long factorialBucle(int n) {
+		long num = 1;
+		if (n == 0) {
+			return 1;
+		} else {
+			for (int i = 1; i <= n;i++) {
+				num*=i;
+			}
+			return num;
+		}
+	}
 }
