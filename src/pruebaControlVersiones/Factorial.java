@@ -11,7 +11,6 @@ public class Factorial {
         }
         sc.close();
         System.out.println("RESULTADO - El factorial del número " + num + " es " + factorialRec(num));
-        System.out.println("Proceso completado usando el método recursivo.");
 	}
 	/**
 	 * Calcula el factorial de un número utilizando un enfoque recursivo.
