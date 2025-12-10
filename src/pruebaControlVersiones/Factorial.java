@@ -12,6 +12,12 @@ public class Factorial {
         sc.close();
         System.out.println("RESULTADO - El factorial del número " + num + " es " + factorialBucle(num));
 	}
+	private static long factorialRec(int n) {
+	    if (n == 0 || n == 1) {
+	      return 1;
+	    }
+	    return n * factorialRec(n - 1);
+	}
 	private static int pedirNumero() {
 		int num;
 	    boolean valido;
