@@ -1,0 +1,76 @@
+    1  history -w
+    2  git init
+    3  echo "/bin/" > .gitignore
+    4  eval "$(ssh-agent -s)"
+    5  ssh-add ~/.ssh/id_ed25519
+    6  ssh-add -l
+    7  git add .
+    8  git commit -m "A: Versión inicial que pide número y comprueba si es menor o mayor a 0"
+    9  git branch -M main
+   10  git remote add origin git@github.com:AidanGuzmanPostigo/DAM2526_GPA_Factorial.git
+   11  git branch -M main
+   12  git push -u origin main
+   13  git add .
+   14  git commit -m "B: Añadida función estática de pedir número y optimización de código"
+   15  git push
+   16  git add .
+   17  git commit -m "C: Añadida línea println con resultado futuro del factorial"
+   18  git push
+   19  git branch -c factorial_recursivo
+   20  git branch
+   21  git switch factorial_recursivo 
+   22  git add .
+   23  git commit -m "F1: Añadida función recursiva para calcular el factorial"
+   24  git add .
+   25  git commit -m "F2: Añadido que se muestre el factorial del número en el resultado"
+   26  git add .
+   27  git commit -m "F3: Añadida documentación de la función recursiva"
+   28  git log --all --graph
+   29  git log --all --graph
+   30  git switch main
+   31  clear
+   32  git add .
+   33  git commit -m "D: Añadida verificación de tipo de dato en la función pedirNumero"
+   34  git push
+   35  git add .
+   36  git commit -m "E: Añadida función iterativa que calcula factorial de un número"
+   37  git push
+   38  git add .
+   39  git commit -m "F: Añadida salida para el resultado de la función que calcula factorial de manera iterativa"
+   40  git push
+   41  git log --all --graph
+   42  clear
+   43  git log --all --graph
+   44  clear
+   45  git switch factorial_recursivo 
+   46  git rebase main
+   47  git status
+   48  git add .
+   49  git rebase --continue
+   50  git log --all --graph
+   51  git push -u origin factorial_recursivo
+   52  git add .
+   53  git commit -m "F4: Añadida línea final con mensaje al usuario de que se ha realizado el método recursivo"
+   54  git push
+   55  git switch main
+   56  git merge factorial_recursivo 
+   57  git status
+   58  git add .
+   59  git commit -m "G: Versión fusionada con rama factorial_recursivo"
+   60  git push
+   61  clear
+   62  git log --all --graph
+   63  clear
+   64  git log --all --graph
+   65  git log
+   66  git log --oneline
+   67  clear
+   68  git revert 34a712a
+   69  git push
+   70  git --log --graph
+   71  git log --all --graph
+   72  clear
+   73  git add .
+   74  git commit -m "G: Añadidas las imágenes de apartados 2 y 3"
+   75  git push
+   76  history > AGPDAM2526_PruebaGit&Github_Parte1.txt
