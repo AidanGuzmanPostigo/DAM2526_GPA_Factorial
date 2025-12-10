@@ -9,8 +9,8 @@ public class Factorial {
         } else {
             System.out.println("Has introducido el número: " + num);
         }
-
         sc.close();
+        System.out.println("RESULTADO - En versiones posteriores se calculará el factorial del número " + num);
 	}
 	private static int pedirNumero() {
 		System.out.print("Introduce un número entero mayor o igual que 0: ");
